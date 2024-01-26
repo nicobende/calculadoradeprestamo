@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .container {
+    text-align: center;
+    max-width: 400px;
+  }
+
+  #monthlyPayment,
+  #totalPayment {
+    font-weight: bold;
+  }
+
+  .nav-mode ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* dark mode */
+  .blackMode {
+    background-color: black;
+    color: white;
+  }
+
+  .border{
+     padding: 15px;
+     border-radius: 20px;
+    
+
+  }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Préstamo</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body class="d-flex justify-content-center align-items-center vh-100 m-0">
+    <main>
+      <section class="section-form">
+        <nav class="nav-mode">
+          <ul>
+            <li>
+              <button id="btnLightMode" class="btnLightMode btn btn-light">
+                <i class="fas fa-sun"></i>
+              </button>
+            </li>
+
+            <li>
+              <button id="btnDarkMode" class="btnDarkMode btn btn-dark">
+                <i class="far fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="container mt-5 border">
+          <h2 class="mb-4">Calculadora de Préstamo</h2>
+
+          <form id="loanForm">
+            <div class="form-group">
+              <label for="monto">$ Monto del Préstamo:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="monto"
+                placeholder="Ingrese el monto del préstamo"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="tasaInteres">Tasa de Interés (%):</label>
+              <input
+                type="number"
+                class="form-control"
+                id="tasaInteres"
+                placeholder="Ingrese la tasa de interés"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="plazo">Plazo del Préstamo (en meses):</label>
+              <input
+                type="number"
+                class="form-control"
+                id="plazo"
+                placeholder="Ingrese el plazo del préstamo en meses"
+                required
+              />
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-success btn-lg btn-block"
+              onclick="calcularPrestamo()"
+            >
+              Calcular
+            </button>
+          </form>
+
+          <h3 class="mt-4">Resultados:</h3>
+          <p id="pagoMensual">Pago Mensual: $0.00</p>
+          <p id="montoTotal">Pago Total: $0.00</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/darkMode.js"></script>
+  </body>
+</html>
