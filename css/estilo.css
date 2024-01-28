@@ -23,14 +23,34 @@ body {
   }
 
   /* dark mode */
-  .blackMode {
-    background-color: black;
+  body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: #1b0737;
     color: white;
   }
 
-  .border{
-     padding: 15px;
-     border-radius: 20px;
-    
-
+  .btn {
+    color: white;
+    background-color: rgb(47, 152, 193);
   }
+
+  .btn-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.form-group{
+  margin-top: 20px;
+  margin-bottom: 20px;
+ 
+}
+
+h2{
+  margin-top: 15px;
+}
+  

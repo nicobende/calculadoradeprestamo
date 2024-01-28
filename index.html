@@ -15,15 +15,7 @@
         <nav class="nav-mode">
           <ul>
             <li>
-              <button id="btnLightMode" class="btnLightMode btn btn-light">
-                <i class="fas fa-sun"></i>
-              </button>
-            </li>
-
-            <li>
-              <button id="btnDarkMode" class="btnDarkMode btn btn-dark">
-                <i class="far fa-moon"></i>
-              </button>
+              <button id="color-mode" class="btn">Cambiar a Dark Mode</button>
             </li>
           </ul>
         </nav>
@@ -64,14 +56,15 @@
                 required
               />
             </div>
-
-            <button
-              type="button"
-              class="btn btn-success btn-lg btn-block"
-              onclick="calcularPrestamo()"
-            >
-              Calcular
-            </button>
+            <div class="btn-group">
+              <button
+                type="button"
+                class="btn btn-info btn-lg btn-block"
+                onclick="calcularPrestamo()"
+              >
+                Calcular
+              </button>
+            </div>
           </form>
 
           <h3 class="mt-4">Resultados:</h3>
